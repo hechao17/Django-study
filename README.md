@@ -40,6 +40,17 @@ cd到你需要创建的文件夹下使用 `virtualenv my_env` 创建环境，`my
 
 学习先到这里，还有工作任务需要完成，先切回去码代码了.....
 
+## The Second Day...
+安装文档中修改 `modle.py`, 需要在后面添加 `on_delete=models.CASCADE`， 否则会报错！
+ 
+    author = models.ForeignKey(User, related_name='blog_posts', on_delete=models.CASCADE)
+
+将后台修改为中文，将setting.py中的语言修改即可
+
+    LANGUAGE_CODE = 'zh-Hans'
+
+
+
 
 
 
